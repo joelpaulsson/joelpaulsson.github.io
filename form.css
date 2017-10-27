@@ -1,7 +1,7 @@
 
 
 .float-label-control { position: relative; margin-bottom: 1.5em; }
-    .float-label-control ::-webkit-input-placeholder { color: transparent; }
+    .float-label-control ::-webkit-input-placeholder { color: transparent; font-size: 20px;}
     .float-label-control :-moz-placeholder { color: transparent; }
     .float-label-control ::-moz-placeholder { color: transparent; }
     .float-label-control :-ms-input-placeholder { color: transparent; }
@@ -26,7 +26,7 @@
 
 
 @keyframes float-labels {
-    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1em; }
     20% { font-size: 1.5em; opacity: 0; }
     30% { top: 0.1em; }
     50% { opacity: 0; font-size: 0.85em; }
@@ -55,4 +55,8 @@
     30% { top: 0.1em; }
     50% { opacity: 0; font-size: 0.85em; }
     100% { top: 3em; opacity: 1; }
+}
+
+#submit{
+    margin-left: 80%;
 }

@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -17,126 +19,157 @@
 
 
 <div class="site-wrapper">
-  <div class="site-wrapper-inner">
+  <div class="site-wrapper-inner" >
     <div class="cover-container">
       <div class="inner cover">
-        <h1 class="cover-heading text-center">POLARBEAR SURFTRAVELS</h1>
-        <div class="row text-center" >
-            <div class="col-sm" > <a class="btn" href="#about"> ABOUT </a> </div>
+        <h1 class="cover-heading text-center" style="color: white;">POLARBEAR SURFTRAVELS</h1>
+        <!-- <div class="row text-center" >
+          <div class="col-sm" > <a class="btn" href="#about"> ABOUT </a> </div>
           <div class="col-sm"> <a class="btn" href="#packages"> PACKAGES </a> </div>
           <div class="col-sm"> <a class="btn" href="#booking"> BOOKING </a> </div>
           <div class="col-sm"> <a class="btn" href="#gallary"> GALLERY </a> </div>
           <div class="col-sm"> <a class="btn" href="#social"> SOCIAL </a> </div>
-          
-          </div>
+        </div> -->
       </div>
-
     </div>
-</div>
+    <div class="row text-center">
+      <div class="col-sm" > <a class="btn" href="#about"> ABOUT </a> </div>
+          <div class="col-sm"> <a class="btn" href="#packages"> PACKAGES </a> </div>
+          <div class="col-sm"> <a class="btn" href="#booking"> BOOKING </a> </div>
+          <div class="col-sm"> <a class="btn" href="#gallary"> GALLERY </a> </div>
+          <div class="col-sm"> <a class="btn" href="#social"> SOCIAL </a> </div>
+      </div>
+  </div>
+
 </div>
 
 
 <hr>
 
 
-  <section id="about" class="content-section">
-    <div class="container" >
-      <div class="col-lg-12 ">
+<section class="cover-thing first" id="about">
+    <div class="container">
+      <div class="col-lg-12">
         <div class="row">
           <div class="col-3">            
-             <img class="img-fluid" src="img/waves.svg"> <!-- ADD IMAGE-->
+             <img class="img-fluid" src="img/pol2.jpg"> <!-- ADD IMAGE-->
           </div>
           <div class="col-8">
-            <h3> INFO </h3>
-            <p> Welcome to Polarbear Surftravels..... </p>
+            <h3 id="section-title"> INFO </h3>
+            <p> Nunc mi odio, cursus at cursus ac, hendrerit sed tellus. Nam non arcu luctus, ultrices mauris blandit, malesuada risus. Vivamus aliquet, purus sed blandit tincidunt, neque tellus viverra sapien, sit amet ornare justo mauris vitae tortor. Duis ut erat ligula. Suspendisse pellentesque volutpat magna vel elementum. Curabitur fringilla vehicula ipsum non vestibulum. Sed euismod eget dolor vitae porta. Fusce ligula mauris, malesuada ac dui sit amet, malesuada porta tellus. Suspendisse semper ultrices tortor ut cursus. Vivamus laoreet tincidunt rhoncus. Praesent in ultrices odio, sit amet luctus libero. Suspendisse molestie quam ut scelerisque venenatis. Pellentesque vestibulum, erat et mollis pharetra, est lacus pulvinar nulla, id lacinia nisi nibh ac turpis. Suspendisse dictum a ex eget venenatis. Mauris risus ipsum, suscipit sit amet hendrerit sollicitudin, dapibus et tellus. </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
 
+<section class="cover-thing second" id="packages">
+  <div class="container">
+        <div class="col-lg-12 ">
+          <div class="row">
+            <div class="col-3">
+              <img class="img-fluid" src="img/pol1.jpg"> <!-- ADD IMAGE-->
+             </div>
+            <div class="col-8">
+              <h3 id="section-title"> PACKAGES </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus facilisis mauris. Curabitur accumsan magna vitae orci elementum, eget aliquet neque luctus. Praesent viverra vulputate commodo. Nulla a luctus lectus. Sed est lectus, volutpat id purus a, lobortis eleifend nulla. Etiam lectus felis, vulputate in sagittis non, volutpat nec nulla. Nulla facilisi. Integer consequat libero nec lorem laoreet interdum. Vestibulum pulvinar efficitur lobortis. In hac habitasse platea dictumst. Sed mattis vel urna eu bibendum. Sed porta augue vel ultricies euismod. Donec fringilla luctus ligula eget mollis. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
 
-    <section id="packages" class="content-section">
+<section class="cover-thing third" id="gallary">
+  <div class="container" >
+        <div class="col-lg-12 ">
+          <h3 id="section-title">GALLERY</h3>
+        <div class="row">
+
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/pol1.jpg" alt="Lights" style="width:100%" id="myImg">
+                <div class="caption">
+                  <p>Lorem ipsum donec</p>
+                </div>
+
+                <!--The Modal-->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class ="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/pol2.jpg" alt="Lights" style="width:100%" id="myImg1">
+                <div class="caption">
+                  <p>Lorem ipsu</p>
+                </div>
+                  <!--The Modal-->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class ="modal-content" id="img02">
+                  <div id="caption"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <img src="img/pol3.jpg" alt="Lights" style="width:100%" id="myImg2">
+                <div class="caption">
+                  <p>Lorem ipsum donec</p>
+                </div>
+                  <!--The Modal-->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class ="modal-content" id="img03">
+                  <div id="caption"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      
+</section>
+
+    <section id="booking" class="cover-thing fourth">
       <div class="container" >
         <div class="col-lg-12 ">
           <div class="row">
             <div class="col-3">
-              <img class="img-fluid" src="img/waves.svg"> <!-- ADD IMAGE-->
+              <img class="img-fluid" src="img/pol3.jpg"> <!-- ADD IMAGE-->
              </div>
-            <div class="col-8">
-              <h3> PACKAGES </h3>
-              <p> Surfing in the Philiphines with Polarbear Surftravels..... </p>
+            <div class="col-sm-7" >
+              
+              <!--Form from: https://bootsnipp.com/snippets/featured/float-label-pattern-forms-->
+
+              <h3 class="text-left" id="section-title">BOOKING</h3>
+                  <form role="form">
+                      <select class="form-control form-control-sm"><option>Number of persons</option></select>
+                      <div class="form-group float-label-control">
+                          <input type="email" class="form-control" placeholder="Firstname Surname" >
+                      </div>
+                      <div class="form-group float-label-control">
+                          <input type="password" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group float-label-control">
+                          <textarea class="form-control" rows="3" placeholder="Questions"></textarea>
+                      </div> 
+                  </form>
+                  <button type="button" class="btn btn-primary" id="submit">Submit</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<!--
-    <section id="booking" class="content-section">
-      <div class="container" >
-        <div class="row">
-          <div class="col-3">
-            <img class="img-fluid" src="img/waves.svg"> <!-- ADD IMAGE--
-           </div>
-          <div class="col-8">
-            
-            <!--Form from: https://bootsnipp.com/snippets/featured/float-label-pattern-forms--
-            <h2 class="text-left">BOOKING</h2>
-                <form role="form">
-                    <div class="form-group float-label-control">
-                        <label for="">Firstname Surname</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="form-group float-label-control">
-                        <label for="">Email</label>
-                        <input type="password" class="form-control" >
-                    </div>
-                    <div class="form-group float-label-control">
-                        <label for="">Other questions</label>
-                        <textarea class="form-control" rows="1"></textarea>
-                    </div>
-
-                    <button class="btn pull-right">Submit</button>
-                </form>
-       
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="gallary" class="content-section">
-      <div class="container" >
-        <div class="row">
-          <div class="col-3">
-            <img class="img-fluid" src="img/waves.svg"> <!-- ADD IMAGE--
-           </div>
-          <div class="col-8">
-            <h3> GALLARY </h3>
-            <p> Traveling with Polarbear Surftravels will take you to beautiful beaches..... </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="social" class="content-section">
-      <div class="container" >
-        <div class="row">
-          <div class="col-3">
-            <img class="img-fluid" src="img/waves.svg"> <!-- ADD IMAGE--
-           </div>
-          <div class="col-8">
-            <h3> SOCIAL </h3>
-            <p> You can find daily updates from Polarbear Surftravels at..... </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
- -->
 
     <hr class="star-primary">
     <div class="footer text-center"><p>Contact me on: hej@hej.nu</p></div>
@@ -145,7 +178,11 @@
 
 
 
+
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
