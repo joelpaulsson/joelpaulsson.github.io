@@ -35,9 +35,9 @@
   </div>
 </header>
 
-<hr>
+<!--<hr>-->
 
-<section class="cover-thing first" id="about">
+<section class="cover-thing odd" id="about">
     <div class="container">
       <div class="col-lg-12">
         <div class="row">
@@ -55,7 +55,7 @@
 </section>
 
 
-<section class="cover-thing second" id="packages">
+<section class="cover-thing even" id="packages">
   <div class="container">
         <div class="col-lg-12 ">
           <div class="row">
@@ -72,7 +72,42 @@
       </div>
 </section>
 
-<section class="cover-thing third" id="gallary">
+    <section id="booking" class="cover-thing odd">
+      <div class="container" >
+        <div class="col-lg-12 ">
+          <div class="row">
+            <div class="col-3">
+              <img class="img-fluid" src="img/pol3.jpg"> <!-- ADD IMAGE-->
+             </div>
+            <div class="col-sm-7" >
+              
+              <!--Form from: https://bootsnipp.com/snippets/featured/float-label-pattern-forms-->
+
+              <h3 class="text-left" id="section-title">BOOKING</h3>
+              <hr>
+                  <form role="form">
+                      <select class="form-control form-control-sm"><option>Number of persons</option></select>
+                      <div class="form-group float-label-control">
+                          <input type="email" class="form-control" placeholder="Firstname Surname" >
+                      </div>
+                      <div class="form-group float-label-control">
+                          <input type="password" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group float-label-control">
+                          <textarea class="form-control" rows="3" placeholder="Questions"></textarea>
+                      </div> 
+                  </form>
+                  <button type="button" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<section class="cover-thing even" id="gallary">
   <div class="container" >
         <div class="col-lg-12 ">
           <h3 id="section-title">GALLERY</h3>
@@ -132,43 +167,42 @@
       
 </section>
 
-    <section id="booking" class="cover-thing fourth">
-      <div class="container" >
-        <div class="col-lg-12 ">
-          <div class="row">
-            <div class="col-3">
-              <img class="img-fluid" src="img/pol3.jpg"> <!-- ADD IMAGE-->
-             </div>
-            <div class="col-sm-7" >
-              
-              <!--Form from: https://bootsnipp.com/snippets/featured/float-label-pattern-forms-->
 
-              <h3 class="text-left" id="section-title">BOOKING</h3>
-              <hr>
-                  <form role="form">
-                      <select class="form-control form-control-sm"><option>Number of persons</option></select>
-                      <div class="form-group float-label-control">
-                          <input type="email" class="form-control" placeholder="Firstname Surname" >
-                      </div>
-                      <div class="form-group float-label-control">
-                          <input type="password" class="form-control" placeholder="Email">
-                      </div>
-                      <div class="form-group float-label-control">
-                          <textarea class="form-control" rows="3" placeholder="Questions"></textarea>
-                      </div> 
-                  </form>
-                  <button type="button" class="btn btn-primary" id="submit">Submit</button>
-            </div>
-          </div>
+<section class="cover-thing odd" id="social">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-3">            
+          <img class="img-fluid" src="img/pol2.jpg"> <!-- ADD IMAGE-->
+        </div>
+        <div class="col-8">
+         <h3 id="section-title"> SOCIAL </h3>
+          <hr>
+          <p> Nunc mi odio, cursus at cursus ac, hendrerit sed tellus. Nam non arcu luctus, ultrices mauris blandit, malesuada risus. Vivamus aliquet, purus sed blandit tincidunt, neque tellus viverra sapien, sit amet ornare justo mauris vitae tortor. Duis ut erat ligula. Suspendisse pellentesque volutpat magna vel elementum. Curabitur fringilla vehicula ipsum non vestibulum.  
+          </p>
+          
         </div>
       </div>
-    </section>
+        <div class="row justify-content-center text-center svg" style="padding-top: 5%">
+            <div class="col-4" >
+              <a href="https://www.facebook.com/search/top/?q=polarbear%20surftravels" target="_blank">
+                <img src="img/facebook-logo.svg" width="50" height="50">
+              </a>      
+            </div>
+            <div class="col-4">
+              <a href="https://www.instagram.com/polarbearsurftravels/" target="_blank">
+                <img src="img/instagram-symbol.svg" width="50" height="50">
+              </a>      
+            </div>
+    </div>
+  </div>
+</section>
 
 
     <hr class="star-primary">
-    <div class="footer text-center"><p>Contact me on: hej@hej.nu</p></div>
+    <div class="footer even text-center" style="color: #808080"><p>Contact me on: hej@hej.nu</p></div>
     
-    
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

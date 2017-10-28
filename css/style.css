@@ -4,6 +4,7 @@
   
 }
 
+
 .centered {
     position: absolute;
     top: 50%;
@@ -21,12 +22,12 @@
     float: left;  
 }
 
-.first {
-    background-color: #fff;
+.odd {
+    background-color: #f6f6f6;
 }
 
-.second {
-    background-color: #f6f6f6;
+.even {
+    background-color: #fff;
 }
 
 .third {
