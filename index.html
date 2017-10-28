@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="form.css">
-    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\form.css">
+    <link rel="stylesheet" type="text/css" href="css\modal.css">
 
 
     <!-- Bootstrap CSS -->
@@ -17,35 +17,25 @@
   <body>
 
 
-
-<div class="site-wrapper">
-  <div class="site-wrapper-inner" >
-    <div class="cover-container">
-      <div class="inner cover">
-        <h1 class="cover-heading text-center" style="color: white;">POLARBEAR SURFTRAVELS</h1>
-        <!-- <div class="row text-center" >
-          <div class="col-sm" > <a class="btn" href="#about"> ABOUT </a> </div>
-          <div class="col-sm"> <a class="btn" href="#packages"> PACKAGES </a> </div>
-          <div class="col-sm"> <a class="btn" href="#booking"> BOOKING </a> </div>
-          <div class="col-sm"> <a class="btn" href="#gallary"> GALLERY </a> </div>
-          <div class="col-sm"> <a class="btn" href="#social"> SOCIAL </a> </div>
-        </div> -->
-      </div>
+<header>
+  <div class="container">
+    <img src="img/pol4.jpg" class="centered" id="background-img"> 
+    <div class="centered"> 
+      <h1 class="cover-heading text-center" style="color: white;">POLARBEAR SURFTRAVELS</h1>
     </div>
-    <div class="row text-center">
+  </div> 
+  <div class="container" style="padding-top: 45%;">
+    <div class="row text-center" style="padding: 3%;" >
       <div class="col-sm" > <a class="btn" href="#about"> ABOUT </a> </div>
-          <div class="col-sm"> <a class="btn" href="#packages"> PACKAGES </a> </div>
-          <div class="col-sm"> <a class="btn" href="#booking"> BOOKING </a> </div>
-          <div class="col-sm"> <a class="btn" href="#gallary"> GALLERY </a> </div>
-          <div class="col-sm"> <a class="btn" href="#social"> SOCIAL </a> </div>
-      </div>
+      <div class="col-sm"> <a class="btn" href="#packages"> PACKAGES </a> </div>
+      <div class="col-sm"> <a class="btn" href="#booking"> BOOKING </a> </div>
+      <div class="col-sm"> <a class="btn" href="#gallary"> GALLERY </a> </div>
+      <div class="col-sm"> <a class="btn" href="#social"> SOCIAL </a> </div>
+    </div>
   </div>
-
-</div>
-
+</header>
 
 <hr>
-
 
 <section class="cover-thing first" id="about">
     <div class="container">
@@ -55,7 +45,8 @@
              <img class="img-fluid" src="img/pol2.jpg"> <!-- ADD IMAGE-->
           </div>
           <div class="col-8">
-            <h3 id="section-title"> INFO </h3>
+            <h3 id="section-title"> ABOUT </h3>
+            <hr>
             <p> Nunc mi odio, cursus at cursus ac, hendrerit sed tellus. Nam non arcu luctus, ultrices mauris blandit, malesuada risus. Vivamus aliquet, purus sed blandit tincidunt, neque tellus viverra sapien, sit amet ornare justo mauris vitae tortor. Duis ut erat ligula. Suspendisse pellentesque volutpat magna vel elementum. Curabitur fringilla vehicula ipsum non vestibulum. Sed euismod eget dolor vitae porta. Fusce ligula mauris, malesuada ac dui sit amet, malesuada porta tellus. Suspendisse semper ultrices tortor ut cursus. Vivamus laoreet tincidunt rhoncus. Praesent in ultrices odio, sit amet luctus libero. Suspendisse molestie quam ut scelerisque venenatis. Pellentesque vestibulum, erat et mollis pharetra, est lacus pulvinar nulla, id lacinia nisi nibh ac turpis. Suspendisse dictum a ex eget venenatis. Mauris risus ipsum, suscipit sit amet hendrerit sollicitudin, dapibus et tellus. </p>
           </div>
         </div>
@@ -73,6 +64,7 @@
              </div>
             <div class="col-8">
               <h3 id="section-title"> PACKAGES </h3>
+              <hr>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus facilisis mauris. Curabitur accumsan magna vitae orci elementum, eget aliquet neque luctus. Praesent viverra vulputate commodo. Nulla a luctus lectus. Sed est lectus, volutpat id purus a, lobortis eleifend nulla. Etiam lectus felis, vulputate in sagittis non, volutpat nec nulla. Nulla facilisi. Integer consequat libero nec lorem laoreet interdum. Vestibulum pulvinar efficitur lobortis. In hac habitasse platea dictumst. Sed mattis vel urna eu bibendum. Sed porta augue vel ultricies euismod. Donec fringilla luctus ligula eget mollis. </p>
             </div>
           </div>
@@ -84,6 +76,7 @@
   <div class="container" >
         <div class="col-lg-12 ">
           <h3 id="section-title">GALLERY</h3>
+          <hr>
         <div class="row">
 
             <div class="col-md-4">
@@ -151,6 +144,7 @@
               <!--Form from: https://bootsnipp.com/snippets/featured/float-label-pattern-forms-->
 
               <h3 class="text-left" id="section-title">BOOKING</h3>
+              <hr>
                   <form role="form">
                       <select class="form-control form-control-sm"><option>Number of persons</option></select>
                       <div class="form-group float-label-control">
@@ -174,18 +168,23 @@
     <hr class="star-primary">
     <div class="footer text-center"><p>Contact me on: hej@hej.nu</p></div>
     
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 
 
 
 
 
     <!-- Optional JavaScript -->
-    <script src="app.js"></script>
+    <script src="js\app.js"></script>
+    
+    <script src="js\jquery.js"></script>
 
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
