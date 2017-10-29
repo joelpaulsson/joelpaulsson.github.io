@@ -4,6 +4,16 @@
   
 }
 
+#menu {
+  width: 100%;
+  height: 30%;
+  padding-top: 5%;
+}
+
+#fullscreen {
+  height: 70%;
+  width: 100%;
+}
 
 .centered {
     position: absolute;
